@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация студента и расчёт товаров</title>
+</head>
+<body>
+        
+        <h2>Регистрация студента</h2>
+
+    <form id="studentForm">
+
+        <input id="name" placeholder="ФИО" required>
+
+        <input id="email" type="email"
+               placeholder="Email" required>
+
+        <input id="age" type="number"
+               placeholder="Возраст" min="14" max="100" required>
+
+        <input id="group" placeholder="Группа" required>
+
+        <input id="num" placeholder="Введите номер" required>
+
+        <button type="submit">Регистрация</button>
+
+    </form>
+
+    <p id="studentResult"></p>
+
+
+        <h2>Расчёт стоимости товаров</h2>
+
+    <form id="productForm">
+
+        <input id="price" type="number"
+               placeholder="Цена товара" required>
+
+        <input id="quantity" type="number"
+               placeholder="Количество товаров" required>
+
+        <button type="submit">Рассчитать</button>
+
+    </form>
+
+    <p id="productResult"></p>
+
+
+        <h2>Проверка надёжности пароля</h2>
+
+<form id="passwordForm">
+
+    <input id="password" type="password"
+           placeholder="Введите пароль" required>
+
+    <button type="button" id="togglePassword">
+        Показать пароль
+    </button>
+
+</form>
+
+        <h3>Проверка пароля:</h3>
+
+<p id="lengthCheck">!!! Минимум 8 символов</p>
+
+<p id="letterCheck">!!! Наличие букв</p>
+
+<p id="numberCheck">!!! Наличие цифр</p>
+
+<p id="specialCheck">!!! Специальные символы (!@#$%)</p>
+
+<h3 id="strength">Надёжность пароля: не проверен</h3>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
